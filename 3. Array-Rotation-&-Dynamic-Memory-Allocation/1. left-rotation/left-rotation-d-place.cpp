@@ -30,13 +30,15 @@ int main()
         arr[i - d] = arr[i];
     }
 
-    int j = 0;
+    int j = 0; // because temp array start from zero
+    // and we have to add temp value after d index
     for (int i = n - d; i < n; i++)
     {
         arr[i] = temp[j];
         j++;
     }
 
+    // print the array
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
