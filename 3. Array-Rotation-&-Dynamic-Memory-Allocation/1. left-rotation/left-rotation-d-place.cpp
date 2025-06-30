@@ -30,12 +30,19 @@ int main()
         arr[i - d] = arr[i];
     }
 
+    // bruteforce approace
     int j = 0; // because temp array start from zero
     // and we have to add temp value after d index
+    // for (int i = n - d; i < n; i++)
+    // {
+    //     arr[i] = temp[j];
+    //     j++;
+    // }
+
+    // better approach
     for (int i = n - d; i < n; i++)
     {
-        arr[i] = temp[j];
-        j++;
+        arr[i] = temp[i - (n - d)];
     }
 
     // print the array
