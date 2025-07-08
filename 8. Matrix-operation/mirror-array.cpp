@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Problem: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/W
+
 int main()
 {
 
@@ -28,7 +30,7 @@ int main()
             last--;
         }
     }
-    cout<<"Final output: "<<endl;
+    cout << "Final output: " << endl;
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
