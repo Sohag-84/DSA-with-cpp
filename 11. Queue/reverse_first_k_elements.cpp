@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://www.geeksforgeeks.org/dsa/reversing-first-k-elements-queue/
+
 /*
 case:
 1st step-> we have to store queue's values on the kth size stack

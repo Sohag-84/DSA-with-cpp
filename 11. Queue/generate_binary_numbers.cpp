@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://www.geeksforgeeks.org/dsa/interesting-method-generate-binary-numbers-1-n/
+
 /*
 pattern: just add 0 and 1 with first queue values and get 2 binary values
 1 -> 10 , 11

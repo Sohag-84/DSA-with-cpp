@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://www.geeksforgeeks.org/dsa/interleave-first-half-queue-second-half/
+
 void interleaveQueue(queue<int> &q)
 {
     int n = q.size();
