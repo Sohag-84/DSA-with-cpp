@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://leetcode.com/problems/last-stone-weight/description/
+
 int lastStoneWeight(vector<int> &stones)
 {
     priority_queue<int> pq;
