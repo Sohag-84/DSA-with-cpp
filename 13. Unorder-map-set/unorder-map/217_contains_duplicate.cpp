@@ -47,6 +47,29 @@ bool containsDuplicate3(vector<int> &nums)
     return false;
 }
 
+bool containsDuplicateUsingSet(vector<int> &nums)
+{
+    set<int> st;
+    for (auto val : nums)
+    {
+        st.insert(val);
+    }
+    if (st.size() != nums.size())
+        return true;
+    return false;
+}
+bool containsDuplicateUsingUnorderedSet(vector<int> &nums)
+{
+    unordered_set<int> st;
+    for (auto val : nums)
+    {
+        st.insert(val);
+    }
+    if (st.size() != nums.size())
+        return true;
+    return false;
+}
+
 int main()
 {
     vector<int> nums = {1, 2, 3, 4, 1};
@@ -56,5 +79,11 @@ int main()
     cout << containsDuplicate2(nums) << endl;
     // more efficient for memory because bool value takes only 1 bytes space
     cout << containsDuplicate3(nums);
+    // complexity -> O(nlogn) ==> for insert function-> O(logn) and for loop-> O(n)
+    cout << containsDuplicateUsingSet(nums);
+
+    // most efficient way
+    //  complexity -> O(n) ==> for insert function-> constant in unordered_set and for loop-> O(n)
+    cout << containsDuplicateUsingUnorderedSet(nums);
     return 0;
 }
