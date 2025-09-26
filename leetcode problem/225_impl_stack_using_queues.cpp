@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// https://leetcode.com/problems/implement-stack-using-queues/description/
+
 class MyStack
 {
 public:
